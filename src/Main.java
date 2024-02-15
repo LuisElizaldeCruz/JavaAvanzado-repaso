@@ -20,6 +20,14 @@ public class Main {
             System.out.println(cities.get(i));
         }
         */
-        cities.stream().forEach(city -> System.out.println((city));
+        //cities.stream().forEach(city -> System.out.println(city));//expresion lamda
+        //o tambien se puede abreviar de la siguiente manera (Referencia a metodo)
+        cities.stream().forEach(Main::printCity);
+        //o tambien de la siguiente manera
+        //cities.stream().forEach(System.out::println);
+    }
+
+    public static void printCity(String city) {
+        System.out.println(city);
     }
 }
