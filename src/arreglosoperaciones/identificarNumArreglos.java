@@ -1,3 +1,5 @@
+package arreglosoperaciones;
+
 public class identificarNumArreglos {
     public static void main(String[] args) {
         int arr1[] = {1,3,3,4,5,6,8,9,9};

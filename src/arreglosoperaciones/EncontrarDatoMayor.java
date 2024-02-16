@@ -1,3 +1,5 @@
+package arreglosoperaciones;
+
 public class EncontrarDatoMayor {
 
     public static void main(String[] args) {

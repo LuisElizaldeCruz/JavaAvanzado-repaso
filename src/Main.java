@@ -22,9 +22,18 @@ public class Main {
         */
         //cities.stream().forEach(city -> System.out.println(city));//expresion lamda
         //o tambien se puede abreviar de la siguiente manera (Referencia a metodo)
-        cities.stream().forEach(Main::printCity);
-        //o tambien de la siguiente manera
-        //cities.stream().forEach(System.out::println);
+       // cities.stream().forEach(Main::printCity);
+        //o tambien de la siguiente manera mas simple
+
+        //realiza la tarea de manera paralela (patron de diseño pipeline)
+       // cities.stream().parallel().forEach(System.out::println);
+        //si el metod no tiene un metodo terminal nunca se va a ejecutar
+        cities.stream().filter(city -> city.startsWith("B")).forEach(System.out::println);//expresion lamda
+
+    }
+
+    public static boolean filterCity(String city){
+        return city.startsWith("B");
     }
 
     public static void printCity(String city) {

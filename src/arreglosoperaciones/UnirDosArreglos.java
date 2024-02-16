@@ -1,3 +1,5 @@
+package arreglosoperaciones;
+
 import java.util.Arrays;
 
 public class UnirDosArreglos {
