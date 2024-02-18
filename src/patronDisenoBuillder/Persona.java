@@ -1,3 +1,5 @@
+package patronDisenoBuillder;
+
 import java.util.Objects;
 
 public class Persona {
@@ -44,7 +46,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
+        return "patronDisenoBuillder.Persona{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +

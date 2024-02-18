@@ -1,3 +1,5 @@
+package patronDisenoBuillder;
+
 public class PersonaMain {
     public static void main(String[] args) {
         Persona p = Persona.PersonaBuilder.aPersona()

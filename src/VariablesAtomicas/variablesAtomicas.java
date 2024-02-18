@@ -1,3 +1,4 @@
+package VariablesAtomicas;
 
 public class variablesAtomicas {
     public static void main(String[] args) throws Exception {
